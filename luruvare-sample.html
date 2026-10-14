@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>luruvare｜札幌市中央区のネイルサロン</title>
+<meta name="description" content="札幌市中央区の個人ネイルサロン luruvare（ルルヴァーレ）。市電静修学園前徒歩5分。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf9fd;
+  --paper:#ffffff;
+  --ink:#4a4458;
+  --muted:#8a839a;
+  --lav:#c9b8ea;
+  --lav-d:#9b85c9;
+  --sky:#cfe3f7;
+  --pink:#f3d6e8;
+  --line:#ece6f4;
+  --cta:#8f78c4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Zen Maru Gothic",sans-serif;line-height:1.9;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%}
+.en{font-family:"Cormorant Garamond",serif;letter-spacing:.08em}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:10;background:rgba(251,249,253,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:26px;letter-spacing:.06em;text-decoration:none;color:var(--lav-d)}
+nav{display:flex;gap:22px;font-size:13px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--lav-d)}
+.hd-btn{display:none}
+@media(max-width:720px){nav{display:none}.hd-btn{display:inline-block;font-size:12px;padding:6px 14px;border-radius:99px;background:var(--cta);color:#fff;text-decoration:none}}
+
+/* hero */
+.hero{position:relative;min-height:92vh;display:grid;place-items:center;text-align:center;overflow:hidden;
+  background:
+   radial-gradient(60% 50% at 20% 30%,#fff 0,rgba(255,255,255,0) 70%),
+   radial-gradient(50% 45% at 80% 25%,#fdf4fb 0,rgba(253,244,251,0) 70%),
+   radial-gradient(70% 60% at 50% 90%,#f6f1ff 0,rgba(246,241,255,0) 70%),
+   linear-gradient(160deg,var(--sky) 0%,var(--lav) 55%,var(--pink) 100%)}
+.cloud{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);filter:blur(28px);animation:drift 18s ease-in-out infinite alternate}
+.c1{width:340px;height:160px;top:14%;left:-60px}
+.c2{width:420px;height:180px;bottom:12%;right:-80px;animation-duration:22s}
+.c3{width:260px;height:120px;top:55%;left:30%;animation-duration:26s}
+@keyframes drift{to{transform:translateX(60px)}}
+.hero-in{position:relative;padding:100px 20px 60px}
+.hero h1{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:clamp(56px,12vw,104px);color:#fff;letter-spacing:.06em;line-height:1;text-shadow:0 4px 30px rgba(155,133,201,.45)}
+.hero .sub{margin-top:18px;color:#fff;letter-spacing:.3em;font-size:13px}
+.hero .lead{margin-top:28px;color:#5e5672;font-size:15px}
+.btns{margin-top:34px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 30px;border-radius:99px;text-decoration:none;font-size:14px;letter-spacing:.06em;transition:.2s}
+.btn-p{background:var(--cta);color:#fff;box-shadow:0 8px 24px rgba(143,120,196,.35)}
+.btn-p:hover{transform:translateY(-2px)}
+.btn-g{background:rgba(255,255,255,.7);color:var(--lav-d)}
+.scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.3em;color:#fff}
+
+/* section */
+section{padding:96px 0}
+.ttl{text-align:center;margin-bottom:48px}
+.ttl .en{display:block;font-size:40px;color:var(--lav-d);line-height:1.1}
+.ttl .ja{font-size:12px;color:var(--muted);letter-spacing:.2em}
+
+/* news */
+.news{padding:40px 0 0}
+.notice{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 24px;display:flex;gap:16px;align-items:flex-start}
+.notice .tag{flex:none;font-size:11px;background:var(--pink);color:#a2648a;padding:3px 10px;border-radius:99px;margin-top:4px}
+.notice p{font-size:14px}
+.notice small{color:var(--muted);display:block;margin-top:4px}
+
+/* concept */
+.concept{text-align:center}
+.concept p{max-width:560px;margin:0 auto;color:#5e5672}
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.pt{background:var(--paper);border-radius:20px;padding:28px 20px;border:1px solid var(--line)}
+.pt .ic{font-size:28px}
+.pt h3{font-size:15px;margin:10px 0 6px;color:var(--lav-d);font-weight:500}
+.pt p{font-size:13px;color:var(--muted)}
+@media(max-width:720px){.points{grid-template-columns:1fr}}
+
+/* nailist */
+.prof{display:flex;gap:28px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:32px}
+.avatar{flex:none;width:140px;height:140px;border-radius:50%;background:linear-gradient(160deg,var(--sky),var(--lav),var(--pink));display:grid;place-items:center;color:#fff;font-size:18px}
+.prof .role{font-size:11px;letter-spacing:.2em;color:var(--lav-d)}
+.prof h3{font-size:20px;font-weight:500;margin:2px 0 10px}
+.lic{list-style:none;font-size:13px;margin-bottom:12px}
+.lic li::before{content:"✦ ";color:var(--lav)}
+.msg{font-size:13px;color:var(--muted)}
+@media(max-width:720px){.prof{flex-direction:column;text-align:center;padding:28px 20px}.lic{display:inline-block;text-align:left}}
+
+/* gallery */
+.gallery{background:linear-gradient(180deg,var(--bg),#f4effb)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.g{aspect-ratio:1;border-radius:16px;position:relative;overflow:hidden}
+.g span{position:absolute;bottom:10px;left:12px;font-size:11px;color:#fff;letter-spacing:.1em;text-shadow:0 1px 6px rgba(0,0,0,.25)}
+.g1{background:radial-gradient(ellipse at 35% 40%,#1f6b45 0 12%,transparent 13%),radial-gradient(ellipse at 65% 65%,#1f6b45 0 9%,transparent 10%),linear-gradient(135deg,#f4f1ee,#e9e4e0)}
+.g2{background:radial-gradient(circle at 70% 30%,#c9f5dc,transparent 25%),linear-gradient(135deg,#0d3b26,#2f8a5a 55%,#0f4a2e)}
+.g3{background:radial-gradient(circle at 30% 40%,#e9e9e9 0 5%,transparent 6%),radial-gradient(circle at 60% 65%,#d8b878 0 5%,transparent 6%),linear-gradient(135deg,#1a4d33,#3f7d5a)}
+.g4{background:radial-gradient(circle at 50% 50%,#fff 0 6%,transparent 7%),linear-gradient(135deg,#cfe3f7,#b9c8ef)}
+.g5{background:radial-gradient(circle at 40% 30%,#fff,transparent 35%),linear-gradient(135deg,#e6dff0,#f6e9f1)}
+.g6{background:radial-gradient(circle at 40% 60%,rgba(255,255,255,.7),transparent 30%),linear-gradient(135deg,#e7e2ee,#b7aac8)}
+.more{text-align:center;margin-top:28px}
+.more a{color:var(--lav-d);font-size:14px}
+.note{text-align:center;font-size:11px;color:var(--muted);margin-top:8px}
+
+/* menu */
+.menu-box{background:var(--paper);border-radius:24px;padding:36px 32px;border:1px solid var(--line)}
+.cat{font-size:13px;color:var(--lav-d);letter-spacing:.15em;margin:28px 0 8px}
+.cat:first-child{margin-top:0}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.row .p{white-space:nowrap;font-family:"Cormorant Garamond",serif;font-size:18px}
+.row .p small{font-family:"Zen Maru Gothic";font-size:11px;color:var(--muted);margin-right:6px}
+.tbd{color:#c4a3bd;font-size:11px;margin-left:6px}
+@media(max-width:720px){.menu-box{padding:28px 20px}}
+
+/* item */
+.item{display:flex;gap:20px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:20px;margin-top:20px}
+.item .ph{flex:none;width:90px;height:90px;border-radius:14px;background:linear-gradient(160deg,#f2eff7,#dcd3ea);display:grid;place-items:center;font-size:30px}
+.item h4{font-size:14px;font-weight:500}
+.item p{font-size:12px;color:var(--muted);line-height:1.7}
+
+/* info */
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px}
+.card h3{font-size:14px;color:var(--lav-d);font-weight:500;margin-bottom:10px;letter-spacing:.1em}
+.card dl{display:grid;grid-template-columns:5em 1fr;gap:6px 10px;font-size:14px}
+.card dt{color:var(--muted)}
+.map{margin-top:24px;border-radius:20px;overflow:hidden;border:1px solid var(--line);height:280px;background:#eee}
+.map iframe{width:100%;height:100%;border:0;filter:saturate(.7)}
+@media(max-width:720px){.info-grid{grid-template-columns:1fr}}
+
+/* rules */
+.rules li{list-style:none;padding:14px 0 14px 26px;border-bottom:1px solid var(--line);position:relative;font-size:14px}
+.rules li::before{content:"✦";position:absolute;left:0;color:var(--lav)}
+
+/* reserve */
+.reserve{text-align:center;background:linear-gradient(140deg,var(--sky),var(--lav) 60%,var(--pink));color:#fff;border-radius:32px;margin:0 20px;padding:72px 24px}
+.reserve .en{font-size:44px;line-height:1}
+.reserve p{margin:16px 0 30px;font-size:14px}
+.reserve .btn-p{background:#fff;color:var(--cta)}
+
+footer{text-align:center;padding:60px 20px 100px;color:var(--muted);font-size:12px}
+footer .logo{display:block;margin-bottom:10px}
+
+/* sticky cta (mobile) */
+.sticky{display:none}
+@media(max-width:720px){
+  .sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);border-top:1px solid var(--line)}
+  .sticky a{flex:1;text-align:center;padding:12px;border-radius:99px;font-size:13px;text-decoration:none}
+  .sticky .a1{background:var(--cta);color:#fff}
+  .sticky .a2{background:#f1ecf8;color:var(--lav-d)}
+}
+
+/* fade */
+.fade{opacity:0;transform:translateY(16px);transition:1s}
+.fade.on{opacity:1;transform:none}
+
+/* sample banner */
+.sample{position:fixed;top:68px;right:12px;z-index:30;font-size:10px;background:#4a4458;color:#fff;padding:4px 10px;border-radius:99px;opacity:.8}
+</style>
+</head>
+<body>
+
+<div class="sample">SAMPLE</div>
+
+<header>
+  <div class="wrap">
+    <a href="#top" class="logo">luruvare</a>
+    <nav>
+      <a href="#concept">Concept</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#menu">Menu</a>
+      <a href="#info">Access</a>
+      <a href="#rules">注意事項</a>
+    </nav>
+    <a class="hd-btn" href="https://nailie.jp/booking/wW3sYTYDWC/sns-link" target="_blank" rel="noopener">ご予約</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+  <div class="hero-in">
+    <h1>luruvare</h1>
+    <p class="sub">NAIL SALON ｜ SAPPORO</p>
+    <p class="lead">指先から、ふわりと軽やかな毎日を。<br>札幌市中央区のプライベートネイルサロン</p>
+    <div class="btns">
+      <a class="btn btn-p" href="https://nailie.jp/booking/wW3sYTYDWC/sns-link" target="_blank" rel="noopener">ネット予約はこちら</a>
+      <a class="btn btn-g" href="https://www.instagram.com/luruvarenail/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="scroll en">SCROLL</div>
+</section>
+
+<!-- NEWS -->
+<div class="news">
+  <div class="wrap">
+    <div class="notice fade">
+      <span class="tag">お知らせ</span>
+      <p>10/23（木）まで　他店付け替えオフ無料・長さ出し2本まで無料
+        <small>※新規の方、または前回ご来店から3ヶ月以上空いた方は対象外となります</small></p>
+    </div>
+  </div>
+</div>
+
+<!-- CONCEPT -->
+<section class="concept" id="concept">
+  <div class="wrap">
+    <div class="ttl fade"><span class="en">Concept</span><span class="ja">コンセプト</span></div>
+    <p class="fade">luruvare（ルルヴァーレ）は、札幌市中央区にある個人ネイルサロンです。<br>
+    ひとりのネイリストが最初から最後まで担当するので、周りを気にせず、ゆったりとした時間をお過ごしいただけます。<br>
+    ご希望のデザインやお悩みも、お気軽にご相談ください。</p>
+    <div class="points">
+      <div class="pt fade"><div class="ic">🐑</div><h3>ネイル検定1級の技術</h3><p>ネイリスト歴7年。<br>ジェル検定上級の確かな仕上がり</p></div>
+      <div class="pt fade"><div class="ic">☁️</div><h3>平日9:00〜オープン</h3><p>お仕事前や<br>お子さまの送迎後にも</p></div>
+      <div class="pt fade"><div class="ic">🐈</div><h3>他店オフもOK</h3><p>他店で施術したネイルの<br>付け替えも承ります</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- NAILIST -->
+<section class="nailist" style="padding-top:0">
+  <div class="wrap">
+    <div class="ttl fade"><span class="en">Nailist</span><span class="ja">ネイリスト紹介</span></div>
+    <div class="prof fade">
+      <div class="avatar en">photo</div>
+      <div>
+        <p class="role">OWNER NAILIST</p>
+        <h3>○○ ○○<span class="tbd">お名前要確認</span></h3>
+        <ul class="lic">
+          <li>ネイリスト歴 7年</li>
+          <li>JNEC ネイリスト技能検定 1級</li>
+          <li>JNA ジェルネイル技能検定 上級</li>
+        </ul>
+        <p class="msg">ミラーやマグネット、ぷっくりアートなど、トレンドのデザインも得意です。デザインのご相談はInstagramのDMからお気軽にどうぞ。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="ttl fade"><span class="en">Gallery</span><span class="ja">デザイン</span></div>
+    <div class="grid">
+      <div class="g g1 fade"><span>Puffy Green</span></div>
+      <div class="g g2 fade"><span>Mirror Green</span></div>
+      <div class="g g3 fade"><span>Green × Stone</span></div>
+      <div class="g g4 fade"><span>Pearl</span></div>
+      <div class="g g5 fade"><span>Clear</span></div>
+      <div class="g g6 fade"><span>Magnet</span></div>
+    </div>
+    <p class="note">※サンプルのため色見本を表示しています。実際のネイル写真に差し替えます</p>
+    <div class="more"><a href="https://www.instagram.com/luruvarenail/" target="_blank" rel="noopener">もっと見る（Instagram）→</a></div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="wrap">
+    <div class="ttl fade"><span class="en">Menu</span><span class="ja">メニュー・料金</span></div>
+    <div class="menu-box fade">
+      <div class="cat">HAND GEL</div>
+      <div class="row"><span>ワンカラー</span><span class="p">¥0,000<span class="tbd">要確認</span></span></div>
+      <div class="row"><span>定額デザイン</span><span class="p">¥0,000<span class="tbd">要確認</span></span></div>
+      <div class="row"><span>持ち込みデザイン</span><span class="p">¥0,000〜<span class="tbd">要確認</span></span></div>
+
+      <div class="cat">OFF</div>
+      <div class="row"><span>オフのみ</span><span class="p"><small>当店</small>¥3,000　<small>他店</small>¥4,000</span></div>
+      <div class="row"><span>付け替えオフ</span><span class="p"><small>当店</small>¥0　<small>他店</small>¥1,500</span></div>
+
+      <div class="cat">OPTION</div>
+      <div class="row"><span>長さ出し（1本）</span><span class="p">¥000<span class="tbd">要確認</span></span></div>
+      <div class="row"><span>ストーン・パーツ</span><span class="p">¥000〜<span class="tbd">要確認</span></span></div>
+    </div>
+
+    <div class="item fade">
+      <div class="ph">🧴</div>
+      <div>
+        <h4>店販｜カリング ハンド&amp;ネイルクリーム　¥550</h4>
+        <p>べたつかずサラサラとしたテクスチャー。ヒアルロン酸・コラーゲンなど保湿成分配合で、ネイルの持ちをサポートします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFO -->
+<section id="info" style="padding-top:20px">
+  <div class="wrap">
+    <div class="ttl fade"><span class="en">Access</span><span class="ja">サロン情報</span></div>
+    <div class="info-grid">
+      <div class="card fade">
+        <h3>SALON</h3>
+        <dl>
+          <dt>店名</dt><dd>luruvare（ルルヴァーレ）</dd>
+          <dt>住所</dt><dd>札幌市中央区 ○○<br><span class="tbd" style="margin:0">※ご予約後にご案内</span></dd>
+          <dt>アクセス</dt><dd>市電「静修学園前」徒歩5分<br>地下鉄南北線「幌平橋」駅 徒歩10分</dd>
+        </dl>
+      </div>
+      <div class="card fade">
+        <h3>OPEN</h3>
+        <dl>
+          <dt>営業時間</dt><dd>平日 9:00〜17:30</dd>
+          <dt>定休日</dt><dd>土・日・祝（不定休あり）</dd>
+          <dt>お支払い</dt><dd>現金のみ</dd>
+          <dt>ご予約</dt><dd>ネイリー / Instagram DM</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="map fade">
+      <iframe loading="lazy" title="地図" src="https://www.google.com/maps?q=%E9%9D%99%E4%BF%AE%E5%AD%A6%E5%9C%92%E5%89%8D%E9%A7%85&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- RULES -->
+<section id="rules" style="padding-top:20px">
+  <div class="wrap">
+    <div class="ttl fade"><span class="en">Notice</span><span class="ja">ご予約時の注意事項</span></div>
+    <ul class="rules fade">
+      <li>お支払いは現金のみとなります。</li>
+      <li>キャンセル・ご予約の変更はお早めにご連絡ください。</li>
+      <li>当日・無断キャンセルの場合、キャンセル料をいただく場合がございます。</li>
+      <li>Instagram DMからのご予約は、お返事をもってご予約確定となります。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- RESERVE -->
+<div class="reserve fade">
+  <div class="en">Reservation</div>
+  <p>24時間いつでもネイリーからご予約いただけます</p>
+  <a class="btn btn-p" href="https://nailie.jp/booking/wW3sYTYDWC/sns-link" target="_blank" rel="noopener">ネット予約する</a>
+</div>
+
+<footer>
+  <a href="#top" class="logo">luruvare</a>
+  札幌市中央区 個人ネイルサロン<br>
+  <a href="https://www.instagram.com/luruvarenail/" target="_blank" rel="noopener">@luruvarenail</a><br><br>
+  © luruvare
+</footer>
+
+<div class="sticky">
+  <a class="a2" href="https://www.instagram.com/luruvarenail/" target="_blank" rel="noopener">Instagram</a>
+  <a class="a1" href="https://nailie.jp/booking/wW3sYTYDWC/sns-link" target="_blank" rel="noopener">ネット予約</a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
